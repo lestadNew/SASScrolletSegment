@@ -1,0 +1,6 @@
+framework module Pods_SASScrolletSegment_Tests {
+  umbrella header "Pods-SASScrolletSegment_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

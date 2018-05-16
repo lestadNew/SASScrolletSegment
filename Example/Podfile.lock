@@ -1,0 +1,16 @@
+PODS:
+  - SASScrolletSegment (0.1.0)
+
+DEPENDENCIES:
+  - SASScrolletSegment (from `../`)
+
+EXTERNAL SOURCES:
+  SASScrolletSegment:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  SASScrolletSegment: 2e185dba1f5179363c02d659752d7c102cb7cf9a
+
+PODFILE CHECKSUM: 73318e44e2636a2f5f68fb296e0c8378ad9b1448
+
+COCOAPODS: 1.5.2

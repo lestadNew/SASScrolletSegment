@@ -1,0 +1,22 @@
+{
+  "name": "SASScrolletSegment",
+  "version": "0.1.0",
+  "summary": "A short description of SASScrolletSegment.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/lestadNew/SASScrolletSegment",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "lestadNew": "topor.9090@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/lestadNew/SASScrolletSegment.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SASScrolletSegment/Classes/**/*"
+}
