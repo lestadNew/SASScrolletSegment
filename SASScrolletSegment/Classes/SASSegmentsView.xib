@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SASSegmentsView" customModule="SASScrolletSegment">
+            <connections>
+                <outlet property="contensView" destination="iN0-l3-epB" id="5ag-aW-iLb"/>
+                <outlet property="layoutHeghtSegmentsController" destination="U7s-I3-3Bb" id="aSd-ri-NAC"/>
+                <outlet property="layoutLadingSpaseUnderlineView" destination="aaH-6d-8o4" id="abg-Td-EBh"/>
+                <outlet property="layoutUnderlineHeight" destination="3Eo-Vf-Ng3" id="hfe-AC-e5P"/>
+                <outlet property="layoutWidhtUnderlineView" destination="y69-2b-z3W" id="kyN-Qm-zpk"/>
+                <outlet property="scrollView" destination="aEa-Bg-j0a" id="U1V-IR-5GJ"/>
+                <outlet property="segment" destination="6pJ-RC-nJ5" id="gL6-fE-xwI"/>
+                <outlet property="underlineView" destination="etb-pn-KtM" id="h4a-s0-baz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEa-Bg-j0a">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="35"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="6pJ-RC-nJ5">
+                            <rect key="frame" x="0.0" y="0.0" width="872" height="29"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="U7s-I3-3Bb"/>
+                            </constraints>
+                            <segments>
+                                <segment title="First"/>
+                                <segment title="Big simple text in this segments Wow"/>
+                                <segment title="Own text"/>
+                                <segment title="Sample text"/>
+                                <segment title="Images"/>
+                                <segment title="Photos"/>
+                                <segment title="Albums"/>
+                                <segment title="Track"/>
+                                <segment title="Big simple text in this segments"/>
+                            </segments>
+                            <connections>
+                                <action selector="actionChangeSegment:" destination="-1" eventType="valueChanged" id="f0G-om-vtu"/>
+                            </connections>
+                        </segmentedControl>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="etb-pn-KtM">
+                            <rect key="frame" x="0.0" y="28" width="512" height="5"/>
+                            <color key="backgroundColor" red="0.93699997660000001" green="0.093999996779999997" blue="0.39599999790000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="5" id="3Eo-Vf-Ng3"/>
+                                <constraint firstAttribute="width" constant="512" id="y69-2b-z3W"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="6pJ-RC-nJ5" firstAttribute="top" secondItem="aEa-Bg-j0a" secondAttribute="top" id="MAB-Jf-ENn"/>
+                        <constraint firstAttribute="trailing" secondItem="6pJ-RC-nJ5" secondAttribute="trailing" id="VK1-8G-tsX"/>
+                        <constraint firstItem="6pJ-RC-nJ5" firstAttribute="leading" secondItem="aEa-Bg-j0a" secondAttribute="leading" id="YQL-Ul-zyg"/>
+                        <constraint firstItem="etb-pn-KtM" firstAttribute="leading" secondItem="aEa-Bg-j0a" secondAttribute="leading" id="aaH-6d-8o4"/>
+                        <constraint firstItem="etb-pn-KtM" firstAttribute="top" secondItem="6pJ-RC-nJ5" secondAttribute="bottom" id="hXe-1o-gfA"/>
+                        <constraint firstAttribute="bottom" secondItem="etb-pn-KtM" secondAttribute="bottom" id="jGY-ov-JQz"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="aEa-Bg-j0a" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="0sY-CY-lNk"/>
+                <constraint firstItem="aEa-Bg-j0a" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="KAz-cO-1DY"/>
+                <constraint firstItem="aEa-Bg-j0a" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="QYL-u7-eme"/>
+                <constraint firstItem="aEa-Bg-j0a" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ZuU-p4-nCl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="24" y="-298.5"/>
+        </view>
+    </objects>
+</document>
