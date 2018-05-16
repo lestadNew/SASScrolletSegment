@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SASScrolletSegment_Example' do
+  pod 'SASScrolletSegment', :path => '../'
+
+  target 'SASScrolletSegment_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
