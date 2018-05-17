@@ -32,9 +32,12 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    @IBAction func selectedNumberTwo(_ sender: Any) {
+        segmentsScrollView.selectedIndex(index: 2)
+    }
     @objc func segmentSelected(sender:SASSegmentsView) {
         print("\(segmentsScrollView.segment.selectedSegmentIndex)")
     }
-
+    
 }
 

@@ -150,6 +150,12 @@ public class SASSegmentsView: UIView {
 }
 
 extension SASSegmentsView{
+    public func selectedIndex(index: Int){
+        if index != segment.selectedSegmentIndex{
+            segment.selectedSegmentIndex = index
+            actionChangeSegment((Any).self)
+        }
+    }
     
     public func insertToScrollSegments(title:String,index:Int,animated:Bool){
         segment.insertSegment(withTitle: title, at: index, animated: animated)
@@ -219,7 +225,13 @@ extension SASSegmentsView{
             NSAttributedStringKey.foregroundColor: colorSelectedSegment
             ], for: .selected)
         
+        segment.addTarget(self, action: #selector(self.segmentSelected(sender:)), for: .valueChanged)
+        
         self.layoutIfNeeded()
+    }
+    
+    @objc private func segmentSelected(sender:SASSegmentsView) {
+        print("Selected")
     }
 }
 

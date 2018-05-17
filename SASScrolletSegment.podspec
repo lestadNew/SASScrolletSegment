@@ -17,12 +17,10 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-Scrolling segments controller with underline.I created the project, because I did not find an analog with a dynamic text length in Scrolling segments
-                       DESC
+  s.description      = 'Scrolling segments controller with underline.I created the project, because I did not find an analog with a dynamic text length in Scrolling segments'
 
   s.homepage         = 'https://github.com/lestadNew/SASScrolletSegment'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  #s.screenshots     = 'https://drive.google.com/file/d/1mfs4G859f4TQ8QcqgpOR4nqsZBzI3G-a/view?usp=sharing'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'lestadNew' => 'topor.9090@gmail.com' }
   s.source           = { :git => 'https://github.com/lestadNew/SASScrolletSegment.git', :tag => s.version.to_s }

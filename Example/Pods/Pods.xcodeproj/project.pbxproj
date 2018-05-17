@@ -58,8 +58,8 @@
 		6C8577D87FA4FCA31F91DC8DD0E90E3B /* Pods-SASScrolletSegment_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SASScrolletSegment_Example-frameworks.sh"; sourceTree = "<group>"; };
 		7F15AC4D2A326BBF947F4D8C2AFF89A3 /* Pods-SASScrolletSegment_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SASScrolletSegment_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		8114A9D93C84F7F8AEBE5E7FF0E6583D /* SASScrolletSegment.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SASScrolletSegment.xcconfig; sourceTree = "<group>"; };
-		8482E0F120AC6B2E008DF9E8 /* SASSegmentsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SASSegmentsView.swift; path = ../SASScrolletSegment/Classes/SASSegmentsView.swift; sourceTree = "<group>"; };
-		8482E0F220AC6B2E008DF9E8 /* SASSegmentsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SASSegmentsView.xib; path = ../SASScrolletSegment/Classes/SASSegmentsView.xib; sourceTree = "<group>"; };
+		8482E0F120AC6B2E008DF9E8 /* SASSegmentsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SASSegmentsView.swift; sourceTree = "<group>"; };
+		8482E0F220AC6B2E008DF9E8 /* SASSegmentsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SASSegmentsView.xib; sourceTree = "<group>"; };
 		8B38B6FE3AAB38B9890761A8CC16330A /* Pods_SASScrolletSegment_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SASScrolletSegment_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90C67C63F38207AFA188FECC1645B908 /* Pods-SASScrolletSegment_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SASScrolletSegment_Example-resources.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -219,7 +219,8 @@
 				8482E0F120AC6B2E008DF9E8 /* SASSegmentsView.swift */,
 				8482E0F220AC6B2E008DF9E8 /* SASSegmentsView.xib */,
 			);
-			path = Classes;
+			name = Classes;
+			path = SASScrolletSegment/Classes;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
